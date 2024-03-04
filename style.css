@@ -1,0 +1,238 @@
+body {
+ background-image: url('https://media.istockphoto.com/photos/white-texture-watercolor-paper-picture-id621348814?b=1&k=20&m=621348814&s=170667a&w=0&h=UdbG1RcWSs2GyjiSjcwSp6vkYUQe88Akgb_-G-M1qAo=');
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center; 
+ font-family: 'Courier New', Courier, monospace;
+ border-style: ridge;
+ box-shadow: 4px 4px 12px black;
+  margin: 1em;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+table {
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
+ul.guide {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0;
+  border: 1px solid black;
+}
+
+ul.guide li {
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+ul.guide li:nth-child(2n+1) {
+  background-color: lightgray;
+}
+
+ul.guide li:first-child {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+ul.guide li:last-child {
+  border-bottom: none;
+}
+
+dt, dd {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0.5em 0;  
+}
+
+dt {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+dt.hover-style {
+  color: black;
+  background-color: lightgrey;
+}
+
+dd {
+  border-top: none;
+  display: none;
+}
+
+dd.active {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
+
+* {
+  color: black;
+}
+
+main {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
+h1 {
+  letter-spacing: 0.25em;
+  word-spacing: 0.5em;
+}
+
+h1:first-letter {
+ font-size: 2em;
+}
+
+img {
+ width: 40%;
+ margin: 30px;
+}
+
+.hand {
+  width: 250px;
+}
+
+.check {
+  width: 250px;
+}
+
+nav a {
+ text-decoration: none;
+ margin: 10px;
+ padding: 0.5em 0.75em;
+ display: block;
+ flex-direction: column;
+ justify-content: space-between;
+ list-style-type: none;
+}
+
+a:hover {
+ background-color: black;
+ color: white; 
+}
+
+a:active {
+ background-color: white;
+ color: black;
+}
+
+header {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+ol {
+  list-style-type: none;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+iframe {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+caption {
+  margin-bottom: 20px;
+}
+
+.nav .current {
+  background-color: black;
+  color: white;
+  word-spacing: 10px;
+}
+
+ul.nav {
+ display: flex; 
+ justify-content: space-evenly;
+ list-style-type: none;
+ padding: 0px;
+ font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+iframe {
+   width: 100%;
+}
+td {
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 594px) {
+body {
+   background-color: white;
+   display: inline-block;
+   text-align: center;
+  }
+
+.wrapper {
+  width: 100%;
+  max-width: unset;
+  margin: 0;
+}
+  
+ul.nav {
+   flex-direction: column;
+  }
+
+  ul.nav li {
+    margin-bottom: unset;
+  }
+
+  h1 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+iframe {
+   margin-left: 5px;
+   margin-right: 10px;
+  }
+
+table, th, td {
+   padding: 5px;
+   padding-right: 20px;
+   padding-left: 10px;
+  }
+
+  .hand {
+    margin: 0;
+  }
+}
+
+@media (hover: hover) {
+  dt:hover {
+    color: black;
+    background-color: lightgrey;
+  }
+}
